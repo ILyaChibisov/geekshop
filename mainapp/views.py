@@ -75,7 +75,11 @@ def contact(request):
     locations = Contact.objects.all()
     content = {"title": title, "visit_date": visit_date, "locations": locations}
     return render(request, "mainapp/contact.html", content)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1634e7d21ad42e0c1b0723e7f49ac3b6653702fd
 
 def product(request, pk):
     title = "продукты"
@@ -86,4 +90,8 @@ def product(request, pk):
         "basket": get_basket(request.user),
         "media_url": settings.MEDIA_URL,
     }
+<<<<<<< HEAD
     return render(request, "mainapp/product.html", content)
+=======
+    return render(request, "mainapp/product.html", content)
+>>>>>>> 1634e7d21ad42e0c1b0723e7f49ac3b6653702fd

@@ -27,4 +27,8 @@ class Basket(models.Model):
         "return total cost for user"
         _items = Basket.objects.filter(user=self.user)
         _totalcost = sum(list(map(lambda x: x.product_cost, _items)))
+<<<<<<< HEAD
         return _totalcost
+=======
+        return _totalcost
+>>>>>>> 1634e7d21ad42e0c1b0723e7f49ac3b6653702fd

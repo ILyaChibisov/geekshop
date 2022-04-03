@@ -58,4 +58,8 @@ def basket_edit(request, pk, quantity):
 
         result = render_to_string("basketapp/includes/inc_basket_list.html", content)
 
+<<<<<<< HEAD
         return JsonResponse({"result": result})
+=======
+        return JsonResponse({"result": result})
+>>>>>>> 1634e7d21ad42e0c1b0723e7f49ac3b6653702fd
