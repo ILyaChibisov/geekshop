@@ -13,6 +13,7 @@ class OrderForm(forms.ModelForm):
         model = Order
         exclude = ("user",)
 
+
 class OrderItemForm(forms.ModelForm):
     price = forms.CharField(label="цена", required=False)
 
