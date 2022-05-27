@@ -124,6 +124,7 @@ def order_forming_complete(request, pk):
 
     return HttpResponseRedirect(reverse("ordersapp:orders_list"))
 
+
 from django.db.models import F
 
 
